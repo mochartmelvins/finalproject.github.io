@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+<script type="text/javascript">
+      var myUrl;
+      function openSites(url){
+        parent.main.location = url;
+        myUrl=url;
+      }
+      function hideSites(){
+        if ( ! myUrl){
+          parent.location = "tocbar.html";}
+        else{
+          parent.location=myUrl; // go to parent
+        }
+      }
+    </script>
+    <div class="container text-center" style="text-align: center">
+            <h1>WELCOME</h1>
+            <img src="ridemoto.jpg" width="50%" >
+              <h5 >Mochart Melvin Sakryan</h5>
+        </div>
+</head>
+<body style="background-image: url(ducati.jpg); background-size:"20% >
+  <form name="form1" id="form1"
+          action="test11.php" method="GET">
+
+<div style="text-align: center">
+<p><a href="javaScript:openSites('Frame.html');">
+      Home</a></p>
+
+<p><a href="javaScript:openSites('ListMotosport.html');">
+      List of Ride Motosport</a></p>
+
+<p><a href="JavaScript:openSites('calculate.html');">
+      Calculate the price of a motosport</a></p>
+
+<p><a href="javaScript:openSites('about.html');">
+      About </a></p>
+ 
+<p><a href="JavaScript:hideSites();">hideSites Menu</a><p>
+      </div>
+</form>
+
+</body>
+</html>

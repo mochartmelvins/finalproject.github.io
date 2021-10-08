@@ -1,0 +1,51 @@
+ <script type="text/javascript">
+      var i=0;
+      var timeout;
+      function preLoadImages(){
+        if(document.images){
+          motor = new Array();
+          motor[0]=new Image();
+          motor[0]="ducati.jpg";
+          motor[1]=new Image();
+          phone[1]="yzfr1.jpg";
+            motor[2]=new Image();
+          motor[2]="S1000RR.jpg";
+            motor[3]=new Image();
+          motor[3]="zx10r.jpg";
+            motor[4]=new Image();
+          motor[4]="1199.jpg";
+          
+        }
+        else{
+          alert("no picture");
+        }
+      }
+function startSlide(){
+        if(i < phone.length){
+          document.images["motor_picures"].src = motor[i];
+          i++;
+        }
+        else{
+          i=0;
+          document.images["motor_picures"].src = motor[i];
+        }
+        timeout = setTimeout('startSlide()',1000);
+      }
+function STOPSlideShow(){
+        clearTimeout(timeout);
+      }
+    </script>
+<body style=background-image:url(background1.jpg) onload = "preLoadImages(),startSlide()" style="overflow-x: hidden;max-width: 100%" >
+    <img name="motor_picures" src="ducati.jpg" height="300"
+         width="300px" />
+ <div style="color: white">
+  <p>MOTOR SPORT</p>
+ <p> Motor Sport is a motorcycle that looks and looks like a racing motorbike or has a performance above the average motorcycle type of a duck motorbike and scooter. Motor sport has many variants of various types and needs. Various types of sport bikes are: Sport business, sport commuter, sport touring, sport naked (nude), sport fairing (dressed), sport adventure (explorer), cruiser etc.</p>
+    <br>
+ <p>Early motor development</p>
+ <p> In Indonesia, a sport motorbike is usually called a bar motor. Examples of motor sports in Indonesia include, DUCATI PANIGALE, Yamaha YZF R1, BMWS1000RR, Kawasaki ZX 10R Harley Davidson. The type of motor that has more performance and control. The driving position is focused on maintaining the gravity point so that control is more controlled, namely Motor Sport. </p>
+<p> Motor Sport is a type of motorcycle that is devoted to the use of racing and high speed. Drivers who drive this type of sport motorbike are relatively bent forward and feet slightly backward, this position is used on a motorcycle like this so that the wind pressure from the opposite direction does not hit the body of the rider that makes this motorbike able to travel at high speed . Motorcycle body like this also has a close distance to the ground which causes this motorbike to be low, this is due to adding aerodynamic elements to the motorcycle at high speeds on the circuit. Examples of this type of motorcycle. </p>
+	 
+ </div>
+  </body>
+<

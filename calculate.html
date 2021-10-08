@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Price of a Motors</title>
+ <style>
+  .container{
+   width:750px;
+   margin: 200px;
+   border: 1px dotted #blue;
+   padding: 10px;
+   background: grey;
+   color:#fff;
+  }
+
+  h2{
+   text-align: center;
+   text-decoration: underline;
+
+
+  }
+
+  table{
+   background: black;
+   margin:auto;
+
+  }
+
+  td{
+   padding: 10px
+  }
+ </style>
+</head>
+<body>
+ <div class="container">
+  <h2>Motors Order Form</h2>
+  <table border="1">
+   <tr>
+    <th>No </th>
+    <th style="width: 200px">Type of motors</th>
+    <th style="width:200px">Price</th>
+    <th>Quantity</th>
+   </tr>
+
+   <tr>
+    <th>1</th>
+    <th>Ducati Panigale 1299</th>
+    <th>Rp<input type="text" name="harga" id="tyt86" size="12" value="780.000.000" readonly></th>
+    <th>Rp<input type="number" name="jumlah_algoritma" id="harga_algoritma" size="7" value="0" onchange="total()"></th>
+   </tr>
+
+   <tr>
+    <th>2</th>
+    <th>Kawasaki ZX10R</th>
+    <th>Rp<input type="text" name="harga" id="porsc718" size="12" value="380.000.000" readonly></th>
+    <th>Rp<input type="number" name="jumlah_javascript" id="harga_javascript" size="7" value="0" onchange="total()"></th>
+   </tr>
+
+   <tr>
+    <th>3</th>
+    <th>Yamaha YZF R1</th>
+    <th>Rp<input type="text" name="harga" id="RRP" size="12" value="500.000.000" readonly></th>
+    <th>Rp<input type="number" name="jumlah_php" id="harga_php" size="7" value="0" onchange="total()"></th>
+   </tr>
+            
+            <tr>
+    <th>4</th>
+    <th>BMW S1000RR</th>
+    <th>Rp<input type="text" name="harga" id="AMV" size="12" value="800.000.000" readonly></th>
+    <th>Rp<input type="number" name="jumlah_php" id="harga_ast" size="7" value="0" onchange="total()"></th>
+   </tr>
+
+   <tr>
+    
+    <th colspan="3" style="text-align:right">jumlah total</th>
+    <th>Rp<input type="text" name="total_jumlah" id="total" size="7" value="" readonly></th>
+   </tr>
+  </table>
+  <br><br>
+  <input type="button" onclick="window.print()" value="cetak">
+
+  <script type="text/javascript">
+  function total() {
+  var vtyt86 = 780000000 * parseInt(document.getElementById('harga_algoritma').value);
+  var vporsc718 = 380000000 * parseInt(document.getElementById('harga_javascript').value);
+  var vRRP = 500000000 * parseInt(document.getElementById('harga_php').value);
+        var vAMV = 800000000 * parseInt(document.getElementById('harga_ast').value);
+
+  var jumlah_harga = vtyt86 + vporsc718 + vRRP + vAMV;
+
+  document.getElementById('total').value = jumlah_harga;
+  }
+  
+  </script>
+ </div>
+</body>
+</html>
